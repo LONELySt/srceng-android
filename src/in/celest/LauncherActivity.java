@@ -223,7 +223,7 @@ public class LauncherActivity extends Activity {
 		if( sdk >= 19 )
 			editor.putBoolean("immersive_mode", immersiveMode.isChecked());
 		else
-			editor.putBoolean("immersive_mode", false); // just in case...
+			editor.putBoolean("immersive_mode", false); // в окне...
 		editor.commit();
 
 		Intent intent = new Intent(this, SDLActivity.class);
